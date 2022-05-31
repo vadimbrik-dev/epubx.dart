@@ -37,7 +37,7 @@ class ContentReader {
           ;
           switch (contentType) {
             case EpubContentType.XHTML_1_1:
-              result.Html![fileName] = epubTextContentFile;
+              result.Html![epubTextContentFile.FileName!] = epubTextContentFile;
               break;
             case EpubContentType.CSS:
               result.Css![fileName] = epubTextContentFile;
